@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+
+extern unsigned char checksum(char mystring[]);
+int main() {
+	char mystring[] = "this is a test";
+	cout << (int)checksum(mystring) << '\n';
+}
