@@ -23,7 +23,7 @@ extern uint32_t eratosthenes(uint32_t n);
 
 int main() {
 	uint32_t n = 1000000000;
-	uint32_t* sieve = new uint32_t[(n+63)/64];
+	uint32_t* sieve = new uint32_t[(n+33)/32];
 	uint32_t count = eratosthenes(sieve, n);
 	cout << count << '\n';
 }
